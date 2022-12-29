@@ -1,0 +1,262 @@
+div#root {
+  font-size: 17px;
+}
+
+html {
+  --mdc-typography-font-family: Arial, Helvetica, sans-serif !important;
+}
+
+body {
+  font-family: var(--mdb-font-roboto) !important;
+}
+
+.table {
+  font-size: 1rem;
+}
+
+.plano_wrapper {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  min-height: 90vh;
+}
+
+span.btn_plan {
+  color: blue;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.menu_wrapper {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.add_plan {
+  display: flex;
+  justify-content: right;
+  padding-bottom: 20px;
+  padding-top: 57px;
+}
+
+.add_plan span {
+  background-color: blue;
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+}
+
+.add_plan span a {
+  color: white;
+}
+
+.logout_wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.log_out {
+  background-color: red;
+  height: 40px;
+  width: 80px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-top: 6px;
+  cursor: pointer;
+}
+
+.custom_class {
+  min-height: 89.9vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup_form {
+  box-shadow: 0 0 38px rgb(0 0 0 / 5%);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.form-outline input[type=text],
+.form-outline input[type=email],
+.form-outline input[type=password] {
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.wrapper_user_details {
+  padding-top: 20px;
+}
+
+.perfil_wrapper {
+  padding: 30px 0 30px 30px;
+  /* background: #fafafa; */
+  /* text-align: center; */
+  box-shadow: 0 0 10px rgba(18, 102, 241, .3);
+  border-radius: 15px;
+
+}
+
+.profile_picture {
+  max-width: 150px;
+  /* padding-bottom: 30px; */
+  border-radius: 50%;
+}
+
+.edit_profile {
+  padding: 50px;
+}
+
+.avatar_list {
+  max-width: 57px;
+}
+
+.add {
+  position: relative;
+  top: -44px;
+  left: 210px;
+  width: 33px;
+  display: inline-block;
+}
+
+.remove {
+  /* position: relative; */
+  top: -44px;
+  left: 220px;
+  width: 33px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.col-sm-3.icon_middle {
+  display: flex;
+  align-items: center;
+  padding-left: 53px;
+  padding-top: 35px;
+}
+
+/* 
+linktree content */
+.content {
+  /* background: #fafafa; */
+  padding: 0 30px 50px;
+}
+
+.banner_destaque {
+  border-radius: 15px;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  padding-top: 31px;
+}
+
+.avatar_feat {
+  max-width: 101px;
+  border-radius: 50%;
+}
+
+.title_and_text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 15px 15px;
+}
+
+.title_and_text p {
+  text-align: center;
+  font-family: helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.youtube_embbeded_link {
+  padding-top: 30px;
+}
+
+.social_network {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.social_network a i {
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+.loading {
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blockuser {
+  min-height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper_blockuser {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper_blockuser i {
+  text-align: center;
+  color: yellow;
+  font-size: 62px;
+  padding-bottom: 30px;
+}
+
+img.avatar_preview {
+  max-width: 100px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.btn_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.duplicate.modify_btn {
+  margin-top: -14px;
+  padding-left: 18px;
+}
+
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 1367px) {
+
+  /* For portrait layouts only */
+  .custom_class {
+    min-height: 93vh;
+  }
+
+  .plano_wrapper {
+    min-height: 93vh;
+  }
+}
+
+/* different techniques for iPad screening */
+@media only screen and (max-device-width: 600px) {
+
+  /* For portrait layouts only */
+  .offset-3 {
+    margin-left: 0 !important;
+  }
+}
