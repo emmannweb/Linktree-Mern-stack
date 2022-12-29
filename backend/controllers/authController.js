@@ -219,7 +219,7 @@ const sendTokenResponse = async (user, statusCode, res) => {
 
   const options = {
     httpOnly: true,
-    expires: new Date(Date.now() + process.env.EXPIRE_TOKEN)
+    expires: new Date(Date.now() +1*60*60*1000)
   };
 
   res
