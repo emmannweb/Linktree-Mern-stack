@@ -50,7 +50,7 @@ app.use('/api/v1', userRoutes);
 app.use('/api/v1', clientRoutes);
 app.use('/api/v1', planRoutes);
 
-const __dirname = path.resolve()
+ __dirname = path.resolve()
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '/frontend/build')))
