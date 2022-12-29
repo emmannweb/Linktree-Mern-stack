@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node backend/app.js",
-    "server": "nodemon backend/app.js",
-    "render": "npm install --prefix frontend && npm run build --prefix frontend
+    "server": "nodemon backend/app.js"
   },
   "author": "Emmmanuel Francois",
   "license": "ISC",
