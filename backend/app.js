@@ -50,7 +50,7 @@ app.use('/api/v1', userRoutes);
 app.use('/api/v1', clientRoutes);
 app.use('/api/v1', planRoutes);
 
-__dirname = path.resolve();
+const __dirname = path.resolve()
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '/frontend/build')))
@@ -58,10 +58,9 @@ if (process.env.NODE_ENV === 'production') {
   app.get('*', (req, res) =>
     res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
   )
-
 } else {
-  app.get('/', () => {
-    res.send("API is running...")
+  app.get('/', (req, res) => {
+    res.send('API is running....')
   })
 }
 
